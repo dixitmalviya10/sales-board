@@ -4,11 +4,19 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
-const NavigateLink = ({ item }) => {
+const NavigateLink = ({
+  item,
+}: {
+  item: { label: string; navTo: string; icon: string };
+}) => {
   const pathName = usePathname();
   return (
     <li className="mb-2">
-      {item?.label === "Profile" && <span className="text-xs leading-10 tracking-widest">ACCOUNT PAGES</span>}
+      {item?.label === "Profile" && (
+        <span className="text-xs leading-10 tracking-widest">
+          ACCOUNT PAGES
+        </span>
+      )}
       <Link
         href={item?.navTo}
         className={`flex items-center gap-2 p-2 hover:bg-[#1A1F37] rounded-md ${
