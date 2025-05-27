@@ -12,6 +12,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        plus: ["var(--font-plus-jakarta)", "sans-serif"],
+      },
+      borderRadius: {
+        card: "20px",
+      },
     },
   },
   plugins: [],
