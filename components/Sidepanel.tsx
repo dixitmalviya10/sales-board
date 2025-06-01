@@ -40,7 +40,7 @@ const Sidepanel = () => {
       } md:translate-x-0 md:opacity-100 md:pointer-events-auto md:block gradient_bg fixed left-4 top-4 max-w-[230px] xl:max-w-[264px] w-full bottom-4 p-5 rounded-card overflow-y-auto z-[100]`}>
       <nav className="flex flex-col gap-4">
         <h2 className="text-center leading-[2.5] tracking-widest gradient-logo">
-          VISION UI FREE
+          SALES BOARD
         </h2>
         <hr className="border-line" />
         <ul>
